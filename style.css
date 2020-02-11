@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.loading{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 7px;
+    animation: blink .9s ease-in-out infinite;
+}
+
+.triangle{
+    stroke-dasharray: 17;
+    animation: dash 2.5s cubic-bezier(0.35,0.04,0.63,0.95) infinite;
+    
+}
+
+
+@keyframes dash {
+    0%{
+        stroke-dashoffset:0 ;
+    }
+
+    100%{
+        stroke-dashoffset:136 ;
+    }
+}
+
+@keyframes blink{
+    50%{
+        opacity: 0;
+    }
+}
+
